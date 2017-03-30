@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Piece" table="pieces">
+        <composite-id>  
+			<key-property name="opp_id" column="opp_id" type="int"></key-property>  
+            <key-property name="piece_id" column="piece_id" type="int"></key-property>  
+        </composite-id>  
+        <property name="x_cordinate" type="int">
+            <column name="x_cordinate" />         
+        </property>
+        <property name="y_cordinate" type="int">
+            <column name="y_cordinate" />
+            </property>
+        <property name="con_time" type="timestamp">
+            <column name="con_time" />
+            </property>
+    </class>
+</hibernate-mapping>

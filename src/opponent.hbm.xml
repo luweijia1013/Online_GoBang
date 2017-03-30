@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Opponent" table="opponent">
+        <id name="opp_id" type="int">
+            <column name="opp_id" />
+            <generator class="increment" />
+        </id>
+        <property name="ID_black" type="int">
+            <column name="ID_black" />
+        </property>
+        <property name="ID_white" type="int">
+            <column name="ID_white" />         
+        </property>
+        <property name="winner" type="int">
+            <column name="winner" />
+            </property>
+        <property name="con_time" type="timestamp">
+            <column name="con_time" />
+            </property>
+    </class>
+</hibernate-mapping>

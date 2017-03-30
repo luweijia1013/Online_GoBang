@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+  <package name="basicstruts" extends="struts-default,json-default">
+ 
+  <action name="login">
+    <result>login.html</result>
+  </action>
+  <action name="fail">
+    <result>jumppage.jsp</result>
+  </action>  
+  <action name="success">
+    <result>jumppage.jsp</result>
+  </action>    
+  <action name="register">
+    <result>login.html</result>
+  </action>  
+   <action name="startgamewithAI">
+    <result>AIchessboard.jsp</result>
+  </action> 
+   <action name="checklogin" class="action.CheckAction" method="checklogin">
+   <result  type="json"><param name="root">jsonResult</param></result>
+    </action>
+     <action name="checkcolor" class="action.CheckAction" method="checkcolor">
+   <result  type="json"><param name="root">jsonResult</param></result>
+    </action>
+ <action name="checkuser" class="action.UserAction" method="check">
+    <result name="buyer" type="redirect">loginsuccess.html</result>
+  	 <result name="manager" type="redirect">loginsuccess.html</result> 
+    <result name="fail" type="redirect">fail</result>
+  </action>
+    <action name="logout" class="action.UserAction" method="logout">
+    <result name="success" type="redirect">login.html</result>
+  </action>
+  <action name="add" class="action.UserAction" method="add">
+    <result name="add" type="redirect">success</result>
+    <result name="fail" type="redirect">fail</result>
+  </action> 
+   <action name="startgame" class="action.OpponentAction" method="findopponent">
+    <result name="find" type="redirect">chessboard.jsp</result>
+    <result name="outoftime" type="redirect">fail</result>
+  </action>  
+  <action name="cancelgame" class="action.OpponentAction" method="deleteopponent">
+   <result name="delete" type="redirect">loginsuccess.html</result>
+  </action>    
+   <action name="storemypiece" class="action.PiecesAction" method="storepiece">	
+  </action>  
+   <action name="waitAIclick" class="action.AiAction" method="waitAIpiece">
+   <result  type="json"><param name="root">jsonResult</param></result>	
+  </action>
+   <action name="waitrivalclick" class="action.PiecesAction" method="waitpiece">
+   <result  type="json"><param name="root">jsonResult</param></result>	
+  </action>
+  <action name="setwinner" class="action.OpponentAction" method="setwinner">	
+  </action>  
+</package>
+ 
+</struts>

@@ -1,0 +1,15 @@
+
+
+/*Ò³ÃæÍ·²¿*/
+#header {
+		 background-image:url('../IMAGE/logo.png');
+		 background-repeat: no-repeat;  
+		 background-position: top left;
+		 }
+#menu {padding:20px 0 0 300px}
+#menu ul {float:right;list-style:none;margin:60px;}
+#menu ul li {float:left;display:block;line-height:30px;margin:0 10px}
+#menu ul li a:link,#menu ul li a:visited {font-size:15px;font-weight:bold;color:#ffffff}
+#menu ul li a:hover{}
+.menuDiv {width:2px;height:28px;background:#ffffff}
+

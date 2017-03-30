@@ -1,0 +1,118 @@
+/*基本信息*/
+body{
+	background:#000000;
+	background-size:  100% 100%;
+	background-repeat:no-repeat;
+}
+
+#canvasbg {
+		 background-image: url(../IMAGE/chessboardbackground2.jpg);
+		 background-size:  100% 100%;
+		 background-repeat: no-repeat;  width:1300px;height:1000px;
+		 margin:0 0 0 0;
+		 }
+		 
+#canvasdiv {
+		 
+		 margin:0 0 ;
+		 }
+#rightside{
+		 background-image: url(../IMAGE/sidebg.png);
+		 background-size:700px 500px;
+		 background-position:-200px 0px;
+		 background-repeat: no-repeat;
+		 width:300px;height:500px;
+		 position:absolute;
+		
+		 left:850px;
+		 
+		 top:250px;
+		}
+#getback{
+		 display:block;
+		 font-family:"Times New Roman",Georgia,Serif;
+		 font-size:120%;
+		 color:#ffffff;
+		 background:#000000;
+		 border-radius:10px;
+		 position:absolute;
+		 width:120px;height:50px;
+		 left:75px;
+		 top:300px;
+		 outline:none;
+}
+#startgame{
+		 display:none;
+		 font-family:"Times New Roman",Georgia,Serif;
+		 font-size:120%;
+		 color:#ffffff;
+		 background:#000000;
+		 border-radius:10px;
+		 position:absolute;
+		 width:120px;height:50px;
+		 left:75px;
+		 top:240px;
+		 outline:none;
+}
+#restart{
+		 display:none;
+		 font-family:"Times New Roman",Georgia,Serif;
+		 font-size:120%;
+		 color:#ffffff;
+		 background:#000000;
+		 border-radius:10px;
+		 position:absolute;
+		 width:120px;height:50px;
+		 left:75px;
+		 top:240px;
+		 outline:none;
+}
+#chooseblack{
+		 font-family:"Times New Roman",Georgia,Serif;
+		 font-size:120%;
+		 color:#ffffff;
+		 background:#000000;
+		 border-radius:10px;
+		 position:absolute;
+		 width:65px;height:50px;
+		 left:65px;
+		 top:240px;
+		 outline:none;
+}
+#choosewhite{
+		 font-family:"Times New Roman",Georgia,Serif;
+		 font-size:120%;
+		 color:#ffffff;
+		 background:#000000;
+		 border-radius:10px;
+		 position:absolute;
+		 width:65px;height:50px;
+		 left:145px;
+		 top:240px;
+		 outline:none;
+}
+#colorshow{	 
+		 line-height:1.1;
+		 font-family:"Times New Roman",Georgia,Serif;
+		 font-size:150%;
+		 position:absolute;
+		 width:141px;height:150px;
+		 left:65px;
+		 top:105px;
+}
+#colorwordblack{
+		 display:none;
+		 line-height:0.2;
+		 font-family:"Times New Roman",Georgia,Serif;
+		 color:#000000;
+		 font-size:230%;
+		 font-weight:bold;		 
+}
+#colorwordwhite{
+		 display:none;
+		 line-height:0.2;
+		 font-family:"Times New Roman",Georgia,Serif;
+		 color:#000000;
+		 font-size:230%;
+		 font-weight:bold;		 
+}
